@@ -68,19 +68,7 @@ while true
     cprintf('*red',' 0) to exit\n');
     prompt = ' : ';
     TypeOfChannel = input(prompt);
-    switch TypeOfChannel
-        case 0
-            clc;
-            return;
-        case 1
-            LTI_ImpulseResponse(sampling_freq,signal,start_point,end_point,Time);
-            clc;
-        case 2
-            LTI_DE(sampling_freq,signal,Time);
-            clc;
-        otherwise
-            warning('please enter only one of the above')
-    end
+    
     end
 end
 end
